@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#fafafa" />
+
+        <script src="../../app/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+        <title>Ácido acético</title>
+
+        <meta name="description" content="" />
+        <link rel="apple-touch-icon" href="../../assets/img/icon.png" />
+        <link rel="icon" href="../../assets/img/favicon.png" />
+        <link rel="stylesheet" href="../../assets/sass/main.css" />
+        <link rel="stylesheet" href="../../assets/sass/main.css.map"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almarai">
+
+    </head>
+
+    <body>
+        <header class="header">
+            <li class="header_item">
+                <a href="../learn.html">Aprende</a>
+            </li>
+            <li class="header_item">
+                <a href="../sobreAtomicType.html">Atomic-Type</a>
+            </li>
+            <li class="header_item">
+                <a href="../playground.html">Juego</a>
+            </li>
+        </header>
+        <div class="app">
+            <h1 class="modal_window">Ácido acético</h1>
+            <div class="container">
+                <div class="input">
+                    <p>Escribe los elementos que conforman este compuesto</p>
+                    <div>
+                        <input
+                            type="text"
+                            id="EnterElements"
+                            name="EnterElements"
+                            placeholder="H H O"
+                        />
+                        <button class="comprobar" onclick="checkElement()">
+                            Comprobar
+                        </button>
+                    </div>
+                    <div ><p  class="display_none" id="true_element">C C H H H H O O</p>
+                        
+                    </div>
+                    <button id="siguiente_elemento" class="btn_siguiente display_none">
+                        <a href="./24.C3H6O.html">Siguiente elemento</a>
+                        </button>
+                </div>
+
+                <div class="output">
+                    <p
+                        class="EnterElements_output"
+                        id="EnterElements_output"
+                    ></p>
+                </div>
+            </div>
+            <section id="alerta_error" class="display_none">
+                <div  class="alerta_error">
+                    <h2>Ops!</h2>
+                    Esta formulación no es correcta.
+                    <button id="PruebaOtraVez" onClick="window.location.reload()">Probar otra vez</button>
+                </div>
+            </section>
+            
+        </div>
+
+        <script>
+            $(function () {
+                $("#EnterElements").on("keyup", function () {
+                    var text = $(this).val();
+                    $("#EnterElements_output").text(text);
+                });
+            });
+        </script>
+    </body>
+</html>

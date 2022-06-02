@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#fafafa" />
+
+        <script src="../app/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+        <title>Trióxido de azufre</title>
+
+        <meta name="description" content="" />
+        <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+        <link rel="icon" href="./assets/img/favicon.png" />
+        <link rel="stylesheet" href="../../assets/sass/main.css" />
+        <link rel="stylesheet" href="../../assets/sass/main.css.map" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Almarai"
+        />
+    </head>
+
+    <body>
+        <header class="header">
+            <li class="header_item">
+                <a href="/pages/learn.html">Aprende</a>
+            </li>
+            <li class="header_item">
+                <a href="/pages/sobreAtomicType.html">Atomic-Type</a>
+            </li>
+            <li class="header_item">
+                <a href="/pages/playground.html">Juego</a>
+            </li>
+        </header>
+        <div class="app">
+            <h1 class="modal_window">Moléculas orgánicas</h1>
+            <div class="container">
+                <div class="input">
+                    <p>
+                        Los compuestos orgánicos están formados,
+                        fundamentalmente, por carbono e hidrógeno, aunque pueden
+                        tener algún átomo de oxígeno, de nitrógeno y, en menor
+                        proporción, de fósforo y azufre. Se llama química
+                        orgánica a la parte de la química que estudia los
+                        compuestos orgánicos.
+                    </p>
+                    <p>
+                        Hay compuestos orgánicos formados por moléculas pequeñas
+                        y otros formados por moléculas muy grandes; a estas se
+                        les llama macromoléculas, y entre ellas están las
+                        proteínas, las grasas, los ácidos nucleicos y los
+                        polímeros.
+                    </p>
+                    <p>
+                        En la función de los compuestos orgánicos no solo
+                        interviene el número de átomos que forma su molécula,
+                        sino cómo están enlazados e, incluso, cómo están
+                        colocados en el espacio. Además de las sustancias que
+                        forman parte de los seres vivos, hay muchos compuestos
+                        orgánicos que se obtienen en el laboratorio de forma
+                        artificial; se llaman compuestos sintéticos.
+                    </p>
+                    <p>
+                        Entre los compuestos orgánicos que se obtienen en el
+                        laboratorio de forma artificial; se llaman compuestos
+                        sintéticos. Entre los compuestos orgánicos de síntesis
+                        hay muchos medicamentos y nuevos materiales, como los
+                        plásticos.
+                    </p>
+                    <button class="btn_play">
+                        <a href="./nivel2/1.H2O.html">Formular nivel dificl</a>
+                    </button>
+                    <button class="btn_play_seconday">
+                        <a href="/pages/learn.html"> Volver modo fácil</a>
+                    </button>
+                </div>
+
+                <div class="output">
+                    <p
+                        class="EnterElements_output"
+                        id="EnterElements_output"
+                    ></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $("#EnterElements").on("keyup", function () {
+                    var text = $(this).val();
+                    $("#EnterElements_output").text(text);
+                });
+            });
+        </script>
+    </body>
+</html>

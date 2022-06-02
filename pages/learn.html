@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#fafafa" />
+
+        <script src="../app/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+        <title>Trióxido de azufre</title>
+
+        <meta name="description" content="" />
+        <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+        <link rel="icon" href="./assets/img/favicon.png" />
+        <link rel="stylesheet" href="../../assets/sass/main.css" />
+        <link rel="stylesheet" href="../../assets/sass/main.css.map" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Almarai"
+        />
+    </head>
+
+    <body>
+        <header class="header">
+            <li class="header_item">
+                <a href="/pages/learn.html">Aprende</a>
+            </li>
+            <li class="header_item">
+                <a href="/pages/sobreAtomicType.html">Atomic-Type</a>
+            </li>
+            <li class="header_item">
+                <a href="/pages/playground.html">Juego</a>
+            </li>
+        </header>
+        <div class="app">
+            <h1 class="modal_window">Moléculas inorgánicas</h1>
+            <div class="container">
+                <div class="input">
+                    <p>
+                        A diferencia de los compuestos orgánicos, típicos de la
+                        química de la vida, los compuestos inorgánicos son
+                        aquellos cuya composición no está basada principalmente
+                        en el carbono y el hidrógeno, sino que involucra
+                        diversos tipos de elementos, casi todos los conocidos de
+                        la Tabla Periódica.
+                    </p>
+                    <p>
+                        Estos compuestos se forman a través
+                        de reacciones y fenómenos físicos presentes en la
+                        naturaleza, tales como la energía solar, la acción de la
+                        electricidad o del calor, etc., que permiten la creación
+                        de sustancias diversas. Sus átomos y moléculas suelen
+                        unirse mediante enlaces iónicos o covalentes.
+                    </p>
+                    <p> A pesar de
+                        la variedad de elementos disponibles, los compuestos
+                        inorgánicos son bastante menos abundantes y diversos que
+                        los orgánicos. Además, tienen una forma de nomenclatura
+                        distinta y suelen estar involucrados en procesos
+                        diferentes. Los compuestos inorgánicos se pueden
+                        clasificar en: óxidos, peróxidos, hidruros, sales,
+                        hidróxidos y oxácidos.</p>
+
+                    <button class="btn_play">
+                        <a href="./nivel1/1.H2O.html">Empieza a formular</a>
+                    </button>
+                    <button class="btn_play_seconday">
+                        <a href="./nivel2/1.H2O.html">Nivel pro</a>
+                    </button>
+                </div>
+
+                <div class="output">
+                    <p
+                        class="EnterElements_output"
+                        id="EnterElements_output"
+                    ></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $("#EnterElements").on("keyup", function () {
+                    var text = $(this).val();
+                    $("#EnterElements_output").text(text);
+                });
+            });
+        </script>
+    </body>
+</html>

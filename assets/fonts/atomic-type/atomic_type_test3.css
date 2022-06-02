@@ -1,0 +1,11 @@
+/* Webfont: AtomicType2 */@font-face {
+    font-family: 'AtomicType2';
+    src: url('atomic_type_test3.eot'); /* IE9 Compat Modes */
+    src: url('atomic_type_test3.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('atomic_type_test3.woff') format('woff'), /* Modern Browsers */
+         url('atomic_type_test3.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

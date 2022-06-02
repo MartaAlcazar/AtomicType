@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#fafafa" />
+
+        <script src="../app/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+        <title>Trióxido de azufre</title>
+
+        <meta name="description" content="" />
+        <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+        <link rel="icon" href="./assets/img/favicon.png" />
+        <link rel="stylesheet" href="../../assets/sass/main.css" />
+        <link rel="stylesheet" href="../../assets/sass/main.css.map" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almarai">
+
+    </head>
+
+    <body>
+        <header class="header">
+            <li class="header_item">
+                <a href="/pages/learn.html">Aprende</a>
+            </li>
+            <li class="header_item">
+                <a href="/pages/sobreAtomicType.html">Atomic-Type</a>
+            </li>
+            <li class="header_item">
+                <a href="/pages/playground.html">Juego</a>
+            </li>
+        </header>
+        <div class="app">
+            <div class="container_playground">
+               
+
+                <div class="output">
+                    <textarea name="playground" id="playground" cols="30" rows="10"></textarea>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $("#EnterElements").on("keyup", function () {
+                    var text = $(this).val();
+                    $("#EnterElements_output").text(text);
+                });
+            });
+        </script>
+    </body>
+</html>
