@@ -2,7 +2,7 @@
 
 Atomic-Type es un proyecto realizado en la asignatura de Tipografía experimental en la Escuela Superior de Diseño de Madrid.
 
-Atomic-Type es una herramienta plenamente tipográfica que ayuda a entender los profesos de formulación química. Está pensada para estudiantes de Educación Secundaria y Bachillerato. 
+Atomic-Type es una herramienta plenamente tipográfica que ayuda a entender los procesos de formulación química. Está pensada para estudiantes de Educación Secundaria y Bachillerato. 
 
 Se recomienda abrir en un ordenador, con el ancho de pantalla completo para una correcta visualización del prototipo.
 
